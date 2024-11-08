@@ -1,11 +1,9 @@
 import React from "react";
-import SayHello from "./sayhello";
+import SayHello from "./SayHello";
 function App() {
   return (
     <div>
-      <h1>hello js</h1>
-      <h2>hello react</h2>
-      <a>link</a>
+      <SayHello />
     </div>
   );
 }
