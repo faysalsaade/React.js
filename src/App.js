@@ -3,7 +3,7 @@ import SayHello from "./SayHello";
 function App() {
   return (
     <div>
-      <SayHello name="faysal" />
+      <SayHello name="Faysal" age="16" Nationality="Lebanese" />
     </div>
   );
 }
