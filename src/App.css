@@ -1,0 +1,13 @@
+body {
+  background-color: red;
+}
+.app {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: red;
+  background-color: black;
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+}

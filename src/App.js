@@ -1,8 +1,9 @@
 import React from "react";
 import Tweet from "./components/tweet";
+import "./App.css";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Tweet
         name="faysal"
         message="hello form faysal"
