@@ -1,15 +1,9 @@
 import React from "react";
 import Tweet from "./components/tweet";
+import "./App.css";
 function App() {
-  const style = {
-    background: "red",
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-    marginTop: "80px",
-  };
   return (
-    <div style={style}>
+    <div className="app">
       <Tweet
         name="faysal"
         message="hello form faysal"
