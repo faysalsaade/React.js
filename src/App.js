@@ -20,7 +20,7 @@ function App() {
         message="hello form fafi"
         likes="Numbers of likes is 100M"
       />
-      <button
+      {/* <button
         onClick={function () {
           setcount(count + 1);
         }}
@@ -41,7 +41,7 @@ function App() {
       >
         reset
       </button>
-      {count}
+      {count} */}
     </div>
   );
 }
