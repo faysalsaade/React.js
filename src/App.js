@@ -1,7 +1,8 @@
-import React from "react";
 import Tweet from "./components/tweet";
 import "./App.css";
+import { useState } from "react";
 function App() {
+  const [count, setcount] = useState(0);
   return (
     <div className="app">
       <Tweet
@@ -19,8 +20,17 @@ function App() {
         message="hello form fafi"
         likes="Numbers of likes is 100M"
       />
+      <button
+        onClick={function () {
+          setcount(count + 1);
+        }}
+      >
+        fif
+      </button>
+      {count}
     </div>
   );
 }
 
 export default App;
+//       <button onClick={() => setcount(count + 1)}>fif</button>
