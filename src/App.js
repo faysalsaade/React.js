@@ -21,6 +21,14 @@ function App() {
   ]);
   return (
     <div className="app">
+      {Users.map((user) => (
+        <Tweet
+          key={user.name}
+          name={user.name}
+          message={user.message}
+          likes={user.likes}
+        />
+      ))}
       {/* <button
         onClick={function () {
           setcount(count + 1);
