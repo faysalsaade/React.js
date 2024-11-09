@@ -25,7 +25,21 @@ function App() {
           setcount(count + 1);
         }}
       >
-        fif
+        + 1
+      </button>
+      <button
+        onClick={function () {
+          setcount(count - 1);
+        }}
+      >
+        - 1
+      </button>
+      <button
+        onClick={function () {
+          setcount(0);
+        }}
+      >
+        reset
       </button>
       {count}
     </div>
