@@ -21,13 +21,6 @@ function App() {
   ]);
   return (
     <div className="app">
-      <Tweet
-        name="faysal"
-        message="hello form faysal"
-        likes="Numbers of likes  "
-      />
-      <Tweet name="fifi" message="hello form fifi" likes="Numbers of likes" />
-      <Tweet name="fafi" message="hello form fafi" likes="Numbers of likes" />
       {/* <button
         onClick={function () {
           setcount(count + 1);
