@@ -6,17 +6,14 @@ function App() {
     {
       name: "faysal",
       message: "hello form faysal",
-      likes: "Numbers of likes ",
     },
     {
       name: "fafi",
       message: "hello form fafi",
-      likes: "Numbers of likes ",
     },
     {
       name: "fifi",
       message: "hello form fifi",
-      likes: "Numbers of likes ",
     },
   ]);
   return (
@@ -26,7 +23,7 @@ function App() {
           key={user.name}
           name={user.name}
           message={user.message}
-          likes={user.likes}
+          likes={(user.likes = "Numbers of likes ")}
         />
       ))}
       {/* <button
