@@ -1,13 +1,10 @@
 import { React, Component } from "react";
 
 class Classtweet extends Component {
-  state = {
-    count: 0,
-  };
   render() {
     return (
       <div>
-        {this.state.count}
+        {/* {this.state.count}
         <button
           onClick={() =>
             this.setState({
@@ -24,7 +21,7 @@ class Classtweet extends Component {
           onClick={() => this.setState({ count: (this.state.count = 0) })}
         >
           reset
-        </button>
+        </button>  */}
       </div>
     );
   }
