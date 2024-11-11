@@ -5,13 +5,13 @@ import Classtweet from "./components/Class tweet";
 function App() {
   const [count, setCount] = useState(0);
   const increment = () => {
-    if (count < -10 && count > 10) {
+    if (count < -9) {
       return;
     }
     setCount(count - 1);
   };
   const decrement = () => {
-    if (count < -10 && count > 10) {
+    if (count > 9) {
       return;
     }
     setCount(count + 1);
