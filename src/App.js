@@ -20,12 +20,18 @@ function App() {
   return (
     <div className="app">
       {Users.map((user) => (
-        <Tweet
-          key={user.name}
-          name={user.name}
-          message={user.message}
-          likes={(user.likes = "Numbers of likes ")}
-        />
+        <div key={user.name}>
+          <Tweet
+            name={user.name}
+            message={user.message}
+            likes={(user.likes = "Numbers of likes ")}
+          />
+          <Tweet
+            name={user.name}
+            message={user.message}
+            likes={(user.likes = "Numbers of likes ")}
+          />
+        </div>
       ))}
       <Classtweet />
     </div>
