@@ -1,6 +1,7 @@
 import Tweet from "./components/tweet";
 import "./App.css";
-import { useState } from "react";
+import { React, useState } from "react";
+import Classtweet from "./components/Class tweet";
 function App() {
   const [Users, setUsers] = useState([
     {
@@ -26,31 +27,9 @@ function App() {
           likes={(user.likes = "Numbers of likes ")}
         />
       ))}
-      {/* <button
-        onClick={function () {
-          setcount(count + 1);
-        }}
-      >
-        + 1
-      </button>
-      <button
-        onClick={function () {
-          setcount(count - 1);
-        }}
-      >
-        - 1
-      </button>
-      <button
-        onClick={function () {
-          setcount(0);
-        }}
-      >
-        reset
-      </button>
-      {count} */}
+      <Classtweet />
     </div>
   );
 }
 
 export default App;
-//       <button onClick={() => setcount(count + 1)}>fif</button>
