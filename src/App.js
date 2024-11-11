@@ -1,39 +1,27 @@
 import Tweet from "./components/tweet";
-import "./App.css";
+//
 import { React, useState } from "react";
 import Classtweet from "./components/Class tweet";
 function App() {
-  const [Users, setUsers] = useState([
-    {
-      name: "faysal",
-      message: "hello form faysal",
-    },
-    {
-      name: "fafi",
-      message: "hello form fafi",
-    },
-    {
-      name: "fifi",
-      message: "hello form fifi",
-    },
-  ]);
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    if (count < -10 && count > 10) {
+      return;
+    }
+    setCount(count - 1);
+  };
+  const decrement = () => {
+    if (count < -10 && count > 10) {
+      return;
+    }
+    setCount(count + 1);
+  };
+
   return (
-    <div className="app">
-      {Users.map((user) => (
-        <div key={user.name}>
-          <Tweet
-            name={user.name}
-            message={user.message}
-            likes={(user.likes = "Numbers of likes ")}
-          />
-          <Tweet
-            name={user.name}
-            message={user.message}
-            likes={(user.likes = "Numbers of likes ")}
-          />
-        </div>
-      ))}
-      <Classtweet />
+    <div>
+      <button onClick={increment}>+1</button>
+      <button onClick={decrement}>-1</button>
+      {count}
     </div>
   );
 }

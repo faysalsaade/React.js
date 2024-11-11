@@ -1,11 +1,12 @@
-import { React, Component } from "react";
+// import { React, Component } from "react";
 
-class Classtweet extends Component {
-  render() {
-    const { name, message, likes } = this.props;
-    return (
-      <div>
-        {/* {this.state.count}
+// class Classtweet extends Component {
+//   render() {
+//     const { name, message, likes } = this.props;
+// //     return (
+//       <div>
+// {
+/* {this.state.count}
         <button
           onClick={() =>
             this.setState({
@@ -22,13 +23,16 @@ class Classtweet extends Component {
           onClick={() => this.setState({ count: (this.state.count = 0) })}
         >
           reset
-        </button>  */}
+        </button>  */
+// }
 
-        <h3>{name}</h3>
+// {
+/* <h3>{name}</h3>
         <p>{message}</p>
         <h3>{likes}</h3>
       </div>
     );
   }
 }
-export default Classtweet;
+export default Classtweet; */
+// }
