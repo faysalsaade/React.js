@@ -13,21 +13,6 @@ function App() {
   const decrement = () => {
     if (count > 9) {
       return;
-    }
-    setCount(count + 1);
-  };
-  const reset = () => {
-    setCount(0);
-  };
-
-  return (
-    <div>
-      <button onClick={increment}>+1</button>
-      <button onClick={decrement}>-1</button>
-      <button onClick={reset}>reset</button>
-      {count}
-    </div>
-  );
 }
 
 export default App;
