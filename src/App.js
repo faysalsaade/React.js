@@ -39,24 +39,7 @@ const App = () => {
     firstName: "",
     lastName: "",
   });
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="fname"
-        value={name.firstName}
-        onChange={(e) => setName({ ...name, firstName: e.target.value })}
-      />
-      <input
-        type="text"
-        placeholder="lname"
-        value={name.lastName}
-        onChange={(e) => setName({ ...name, lastName: e.target.value })}
-      />
-      <h1> my firstName is {name.firstName}</h1>
-      <h1> my lastName is {name.lastName}</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
