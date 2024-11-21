@@ -37,9 +37,19 @@ import { React, useState } from "react";
 const App = () => {
   const [items, setItems] = useState([]);
   const addItems = () => {
-    setItems([...items]);
+    setItems([
+      ...items,
+      {
+        id: items.length,
+        value: Math.floor(Math.random() * 10) + 1,
+      },
+    ]);
   };
-  return <div></div>;
+  return (
+    <div>
+      <button onClick={addItems}> add a number</button>
+    </div>
+  );
 };
 
 export default App;
