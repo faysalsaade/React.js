@@ -1,6 +1,7 @@
 // Fetch
 
 // First Way
+
 // fetch("s").then((response) =>
 //   response
 //     .json()
@@ -22,10 +23,30 @@
 //   .catch((error) => console.error("Error 404"));
 
 // Third Way
-axios
-  .get("https://jsonplaceholder.typicode.com/users")
-  .then((response) =>
-    response.data
-      .map((user) => console.log(user.name, user.address))
-      .catch((error) => console.error("Error 404"))
+
+// axios
+//   .get("https://jsonplaceholder.typicode.com/users")
+//   .then((response) =>
+//     response.data
+//       .map((user) => console.log(user.name, user.address))
+//       .catch((error) => console.error("Error 404"))
+//   );
+import { React, useState } from "react";
+
+const App = () => {
+  const [name, setName] = useState({
+    firstName: "faysal",
+    lastName: "saadeh",
+  });
+  return (
+    <div>
+      <h1>hello my firstName is {name.firstName}</h1>
+      <h1>
+        my lastName is
+        {name.lastName}
+      </h1>
+    </div>
   );
+};
+
+export default App;
