@@ -40,11 +40,8 @@ const App = () => {
   });
   return (
     <div>
-      <h1>hello my firstName is {name.firstName}</h1>
-      <h1>
-        my lastName is
-        {name.lastName}
-      </h1>
+      <h1> my firstName is {name.firstName}</h1>
+      <h1> my lastName is{name.lastName}</h1>
     </div>
   );
 };
