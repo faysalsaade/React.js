@@ -36,11 +36,23 @@ import { React, useState } from "react";
 
 const App = () => {
   const [name, setName] = useState({
-    firstName: "faysal",
-    lastName: "saadeh",
+    firstName: "",
+    lastName: "",
   });
   return (
     <div>
+      <input
+        type="text"
+        placeholder="fname"
+        value={name.firstName}
+        onChange={(e) => setName({ ...name, firstName: e.target.value })}
+      />
+      <input
+        type="text"
+        placeholder="lname"
+        value={name.lastName}
+        onChange={(e) => setName({ ...name, lastName: e.target.value })}
+      />
       <h1> my firstName is {name.firstName}</h1>
       <h1> my lastName is {name.lastName}</h1>
     </div>
