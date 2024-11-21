@@ -35,10 +35,10 @@
 import { React, useState } from "react";
 
 const App = () => {
-  const [name, setName] = useState({
-    firstName: "",
-    lastName: "",
-  });
+  const [items, setItems] = useState([]);
+  const addItems = () => {
+    setItems([...items]);
+  };
   return <div></div>;
 };
 
