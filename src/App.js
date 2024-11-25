@@ -63,15 +63,15 @@ import { React, useState, useEffect } from "react";
 
 const App = () => {
   const [x, setx] = useState(0);
-  const [y, setY] = useState(0);
+  const [y, sety] = useState(0);
   const loadMousePosition = (e) => {
     setx(e.clientX);
-    setx(e.clientY);
+    sety(e.clientY);
   };
   useEffect(() => {
     console.log("useEffect called");
-    Window.addEventListener("mousemove", loadMousePosition);
-  });
+    window.addEventListener("mousemove", loadMousePosition);
+  }, []);
   return (
     <div>
       <h1>x - {x}</h1>
