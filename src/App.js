@@ -48,6 +48,11 @@ const App = () => {
   return (
     <div>
       <button onClick={addItems}> add a number</button>
+      <ul>
+        {items.map((item) => (
+          <li>{item.value}</li>
+        ))}
+      </ul>
     </div>
   );
 };
