@@ -64,7 +64,10 @@ import { React, useState, useEffect } from "react";
 const App = () => {
   const [x, setx] = useState(0);
   const [Y, setY] = useState(0);
-  return <div>app</div>;
+  useEffect(() => {
+    console.log("useEffect called");
+  });
+  return <div>App</div>;
 };
 
 export default App;
