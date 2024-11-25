@@ -50,7 +50,7 @@ const App = () => {
       <button onClick={addItems}> add a number</button>
       <ul>
         {items.map((item) => (
-          <li>{item.value}</li>
+          <li key={item.id}>{item.value}</li>
         ))}
       </ul>
     </div>
