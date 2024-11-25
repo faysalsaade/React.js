@@ -59,9 +59,11 @@
 
 // export default App;
 
-import React from "react";
+import { React, useState, useEffect } from "react";
 
-const app = () => {
+const App = () => {
+  const [x, setx] = useState(0);
+  const [Y, setY] = useState(0);
   return <div>app</div>;
 };
 
