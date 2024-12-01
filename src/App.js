@@ -71,7 +71,8 @@ const App = () => {
   };
   useEffect(() => {
     console.log("useEffect called");
-    window.);
+    window.addEventListener("mousemove", loadMousePosition);
+  }, []);
   return (
     <div>
       <h1>x - {x}</h1>
