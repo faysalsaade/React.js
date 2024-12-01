@@ -61,24 +61,6 @@
 
 import { React, useState, useEffect } from "react";
 
-const App = () => {
-  const [x, setx] = useState(0);
-  const [y, sety] = useState(0);
-  const loadMousePosition = (e) => {
-    console.log("mouse event");
-    setx(e.clientX);
-    sety(e.clientY);
-  };
-  useEffect(() => {
-    console.log("useEffect called");
-    window.addEventListener("mousemove", loadMousePosition);
-  }, []);
-  return (
-    <div>
-      <h1>x - {x}</h1>
-      <h1>y - {y}</h1>
-    </div>
-  );
-};
+const App = () => {};
 
 export default App;
