@@ -58,8 +58,7 @@
 // };
 
 // export default App;
-
-import { React, useState, useEffect } from "react";
+    import { React, useState, useEffect } from "react";
 
 const App = () => {
   const [count, setcount] = useState(0);
@@ -71,11 +70,9 @@ const App = () => {
       console.log(someProp);
     };
     dosomething();
-    const interval = setInterval(tick, 1000);
+    const interval = setIntwerval(tick, 1000);
     return () => {
-      clearInterval(interval);
-    };
-  }, [someProp]);
+      clearInterval(interv
   return <div>{count}</div>;
 };
 
