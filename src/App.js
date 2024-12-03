@@ -4,7 +4,7 @@
 // 2 - avangard
 // 3 - no glory
 // 4 - brodyaga
-// 5- kamin
+// 5- kaminw
 // import { React, useState } from "react";
 // import Classtweet from "./components/Class tweet";
 // function App() {
