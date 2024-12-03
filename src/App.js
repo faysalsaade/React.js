@@ -1,5 +1,10 @@
 // import Tweet from "./components/tweet";
 // //
+// 1 - slay
+// 2 - avangard
+// 3 - no glory
+// 4 - brodyaga
+// 5- kamin
 // import { React, useState } from "react";
 // import Classtweet from "./components/Class tweet";
 // function App() {
