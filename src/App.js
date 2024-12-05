@@ -82,3 +82,5 @@ const App = () => {
   }, [someProp]);
   return <div>{count}</div>;
 };
+
+export default App;
