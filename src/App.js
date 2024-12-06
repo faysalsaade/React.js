@@ -37,8 +37,6 @@
 
 // export default App;
 
-// import { React, useState } from "react";
-
 // const App = () => {
 //   const [items, setItems] = useState([]);
 //   const addItems = () => {
@@ -62,25 +60,10 @@
 //   );
 // };
 
-// export default App;
-// import { React, useState, useEffect } from "react";
+//
 
-// const App = () => {
-//   const [count, setcount] = useState(0);
-//   const tick = () => {
-//     setcount((prevcount) => prevcount + 1);
-//   };
-//   useEffect(() => {
-//     const dosomething = () => {
-//       console.log(someProp);
-//     };
-//     dosomething();
-//     const interval = setInterval(tick, 1000);
-//     return () => {
-//       clearInterval(interval);
-//     };
-//   }, [someProp]);
-//   return <div>{count}</div>;
-// };
-
-// export default App;
+import React from "react";
+const App = () => {
+  return <div>app</div>;
+};
+export default App;
