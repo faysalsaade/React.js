@@ -67,9 +67,14 @@ import axios from "axios";
 const App = () => {
   const [posts, setpost] = useState([]);
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
-      console.log(response);
-    });
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   });
   return <div>app</div>;
 };
