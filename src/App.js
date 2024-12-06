@@ -62,8 +62,15 @@
 
 //
 
-import React from "react";
+import { React, useState, useEffect } from "react";
+import axios from "axios";
 const App = () => {
+  const [posts, setpost] = useState([]);
+  useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
+      console.log(response);
+    });
+  });
   return <div>app</div>;
 };
 export default App;
