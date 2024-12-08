@@ -70,7 +70,7 @@ const App = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((response) => {
-        setp;
+        setpost(response.data);
       })
       .catch((error) => {
         console.log(error);
