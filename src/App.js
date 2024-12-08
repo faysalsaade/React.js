@@ -70,12 +70,20 @@ const App = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((response) => {
-        console.log(response);
+        setp;
       })
       .catch((error) => {
         console.log(error);
       });
   });
-  return <div>app</div>;
+  return (
+    <div>
+      <ul>
+        {posts.map((post) => (
+          <li>{post.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 export default App;
