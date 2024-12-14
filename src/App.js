@@ -82,7 +82,8 @@ const App = () => {
       <ul>
         <input type="text"></input>
         {posts.map((post) => (
-          <li>{post.title
+          <li>{post.title}</li>
+        ))}
       </ul>
     </div>
   );
