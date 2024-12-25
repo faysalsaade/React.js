@@ -65,11 +65,11 @@
 import { React, useState, useEffect } from "react";
 import axios from "axios";
 const App = () => {
-  const [posts, setpost] = useState([]);
-  const [id, setId] = useState(1);
+  const [post, setpost] = useState({});
+  const [id, setId] = useState("");
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts")
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
       .then((response) => {
         setpost(response.data);
       })
@@ -79,12 +79,8 @@ const App = () => {
   });
   return (
     <div>
-      <ul>
-        <input type="text" value={id} />
-        {posts.map((post) => (
-          <li>{post.title}</li>
-        ))}
-      </ul>
+      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+      <h1>{post.title}</h1>
     </div>
   );
 };
