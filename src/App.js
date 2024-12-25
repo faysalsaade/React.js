@@ -66,7 +66,7 @@ import { React, useState, useEffect } from "react";
 import axios from "axios";
 const App = () => {
   const [posts, setpost] = useState([]);
-  const [id,setId] useState([])
+  const [id, setId] = useState(1);
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
@@ -80,7 +80,7 @@ const App = () => {
   return (
     <div>
       <ul>
-        <input type="text"></input>
+        <input type="text" value={id} />
         {posts.map((post) => (
           <li>{post.title}</li>
         ))}
@@ -89,4 +89,3 @@ const App = () => {
   );
 };
 export default App;
-  
