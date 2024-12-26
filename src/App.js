@@ -89,14 +89,16 @@
 import { React, createContext } from "react";
 import ComponentA from "./components/ComponentA";
 
-export const usercontext = createContext();
-
+export const Usercontext = createContext();
+export const familycontext = createContext();
 const App = () => {
   return (
     <div>
-      <usercontext.Provider value={"Faysal"}>
-        <ComponentA />
-      </usercontext.Provider>
+      <Usercontext.Provider value={"Faysal"}>
+        <familycontext.Provider value={"saadeh"}>
+          <ComponentA />
+        </familycontext.Provider>
+      </Usercontext.Provider>
     </div>
   );
 };
