@@ -62,26 +62,26 @@
 
 //
 
-import { React, useState, useEffect } from "react";
-import axios from "axios";
-const App = () => {
-  const [post, setpost] = useState({});
-  const [id, setId] = useState("");
-  useEffect(() => {
-    axios
-      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then((response) => {
-        setpost(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  });
-  return (
-    <div>
-      <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-      <h1>{post.title}</h1>
-    </div>
-  );
-};
-export default App;
+// import { React, useState, useEffect } from "react";
+// import axios from "axios";
+// const App = () => {
+//   const [post, setpost] = useState({});
+//   const [id, setId] = useState("");
+//   useEffect(() => {
+//     axios
+//       .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+//       .then((response) => {
+//         setpost(response.data);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   });
+//   return (
+//     <div>
+//       <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
+//       <h1>{post.title}</h1>
+//     </div>
+//   );
+// };
+// export default App;
