@@ -86,9 +86,10 @@
 // };
 // export default App;
 
-import React from "react";
+import React, { createContext } from "react";
 import ComponentA from "./components/ComponentA";
 
+const usercontext = createContext;
 const App = () => {
   return (
     <div>
