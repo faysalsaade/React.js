@@ -1,7 +1,11 @@
 import React from "react";
-
-const componentb = () => {
-  return <div>componentb</div>;
+import ComponentC from "../ComponentC";
+const ComponentB = () => {
+  return (
+    <div>
+      <ComponentC />
+    </div>
+  );
 };
 
-export default componentb;
+export default ComponentB;

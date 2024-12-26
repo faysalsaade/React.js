@@ -87,9 +87,14 @@
 // export default App;
 
 import React from "react";
+import ComponentA from "./components/ComponentA";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <ComponentA />
+    </div>
+  );
 };
 
 export default App;
