@@ -1,24 +1,14 @@
-import React, { createContext } from "react";
+import { React, useContext } from "react";
 import { Usercontext, familycontext } from "./App";
 
 const ComponentC = () => {
+  const user = useContext(Usercontext);
+  const family = useContext(familycontext);
   return (
     <div>
-      <Usercontext.Consumer>
-        {(user) => {
-          return (
-            <familycontext.Consumer>
-              {(family) => {
-                return (
-                  <h1>
-                    my name is {user} and my family is {family}
-                  </h1>
-                );
-              }}
-            </familycontext.Consumer>
-          );
-        }}
-      </Usercontext.Consumer>
+      <h1>
+        My Name Is {user} And My Family Is {family}
+      </h1>
     </div>
   );
 };
