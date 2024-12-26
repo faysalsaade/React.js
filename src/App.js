@@ -86,14 +86,17 @@
 // };
 // export default App;
 
-import React, { createContext } from "react";
+import { React, createContext } from "react";
 import ComponentA from "./components/ComponentA";
 
-const usercontext = createContext;
+export const usercontext = createContext();
+
 const App = () => {
   return (
     <div>
-      <ComponentA />
+      <usercontext.Provider value={"Faysal"}>
+        <ComponentA />
+      </usercontext.Provider>
     </div>
   );
 };
