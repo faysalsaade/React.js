@@ -95,7 +95,7 @@ const App = () => {
   return (
     <div>
       <Usercontext.Provider value={"Faysal"}>
-        <familycontext.Provider value={"S aadeh"}>
+        <familycontext.Provider value={"Saadeh"}>
           <ComponentA />
         </familycontext.Provider>
       </Usercontext.Provider>
