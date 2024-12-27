@@ -105,26 +105,34 @@
 
 // export default App;
 
-import { React, useReducer } from "react";
-import reducer from "./reducer";
-import { initialstate } from "./reducer";
+// import { React, useReducer } from "react";
+// import reducer from "./reducer";
+// import { initialstate } from "./reducer";
+// const App = () => {
+//   const [countone, dispatch] = useReducer(reducer, initialstate);
+//   const [counttwo, dispatchcountTwo] = useReducer(reducer, initialstate);
+//   return (
+//     <div>
+//       <h1>count one : {countone}</h1>
+//       {/* {count one} */}
+//       <button onClick={() => dispatch("increment")}>increment </button>
+//       <button onClick={() => dispatch("decrement")}>decrement</button>
+//       <button onClick={() => dispatch("reset")}>reset</button>
+//       {/* {count two} */}
+//       <h1>count two : {counttwo}</h1>
+//       <button onClick={() => dispatchcountTwo("increment")}>increment </button>
+//       <button onClick={() => dispatchcountTwo("decrement")}>decrement</button>
+//       <button onClick={() => dispatchcountTwo("reset")}>reset</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import React from "react";
+
 const App = () => {
-  const [countone, dispatch] = useReducer(reducer, initialstate);
-  const [counttwo, dispatchcountTwo] = useReducer(reducer, initialstate);
-  return (
-    <div>
-      <h1>count one : {countone}</h1>
-      {/* {count one} */}
-      <button onClick={() => dispatch("increment")}>increment </button>
-      <button onClick={() => dispatch("decrement")}>decrement</button>
-      <button onClick={() => dispatch("reset")}>reset</button>
-      {/* {count two} */}
-      <h1>count two : {counttwo}</h1>
-      <button onClick={() => dispatchcountTwo("increment")}>increment </button>
-      <button onClick={() => dispatchcountTwo("decrement")}>decrement</button>
-      <button onClick={() => dispatchcountTwo("reset")}>reset</button>
-    </div>
-  );
+  return <div>App</div>;
 };
 
 export default App;
