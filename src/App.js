@@ -114,12 +114,12 @@ const App = () => {
   return (
     <div>
       <h1>count one : {countone}</h1>
-      <h1>count two : {counttwo}</h1>
       {/* {count one} */}
       <button onClick={() => dispatch("increment")}>increment </button>
       <button onClick={() => dispatch("decrement")}>decrement</button>
       <button onClick={() => dispatch("reset")}>reset</button>
       {/* {count two} */}
+      <h1>count two : {counttwo}</h1>
       <button onClick={() => dispatchcountTwo("increment")}>increment </button>
       <button onClick={() => dispatchcountTwo("decrement")}>decrement</button>
       <button onClick={() => dispatchcountTwo("reset")}>reset</button>
