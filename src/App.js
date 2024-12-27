@@ -86,19 +86,35 @@
 // };
 // export default App;
 
-import { React, createContext } from "react";
-import ComponentA from "./components/ComponentA";
+// import { React, createContext } from "react";
+// import ComponentA from "./components/ComponentA";
 
-export const Usercontext = createContext();
-export const familycontext = createContext();
+// export const Usercontext = createContext();
+// export const familycontext = createContext();
+// const App = () => {
+//   return (
+//     <div>
+//       <Usercontext.Provider value={"Faysal"}>
+//         <familycontext.Provider value={"Saadeh"}>
+//           <ComponentA />
+//         </familycontext.Provider>
+//       </Usercontext.Provider>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import { React, useReducer } from "react";
+const initialstate = 0;
 const App = () => {
+  const [count, dispatch] = useReducer(reducer, initialstate);
   return (
     <div>
-      <Usercontext.Provider value={"Faysal"}>
-        <familycontext.Provider value={"Saadeh"}>
-          <ComponentA />
-        </familycontext.Provider>
-      </Usercontext.Provider>
+      <h1>count - {count}</h1>
+      <button>increment</button>
+      <button>decrement</button>
+      <button>reset</button>
     </div>
   );
 };
